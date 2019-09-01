@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/helloPlayerNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textAlignment="center"
+            android:textColor="#9E9A3E"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/clock_img"
+                android:fontFamily="@font/cherry_cream_soda"
+                android:gravity="center"
+                android:text="Time left:"
+                android:textAlignment="center"
+                android:textColor="#610909"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/timeEditText"
+                android:layout_width="166dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="time"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="center"
+                android:paddingRight="2dp"
+                android:text="Hits:"
+                android:textColor="#4CAF50"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/hitsEditText"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:paddingRight="2dp"
+                android:textAlignment="center"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="center"
+                android:paddingRight="2dp"
+                android:text="Misses:"
+                android:textColor="#FF4E41"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/missesEditText"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/boardGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        />
+
+</LinearLayout>
